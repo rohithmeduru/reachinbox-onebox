@@ -1,0 +1,55 @@
+{
+  "name": "reachinbox-onebox",
+  "version": "1.0.0",
+  "description": "Real-Time AI Email Onebox with IMAP Sync, Elasticsearch, and AI Categorization",
+  "keywords": [
+    "email",
+    "imap",
+    "elasticsearch",
+    "ai",
+    "onebox"
+  ],
+  "license": "ISC",
+  "author": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/index.ts",
+    "docker:down": "docker-compose down",
+    "docker:logs": "docker-compose logs -f",
+    "docker:up": "docker-compose up -d",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@elastic/elasticsearch": "latest",
+    "@google/generative-ai": "latest",
+    "axios": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "imap": "latest",
+    "lucide-react": "^0.454.0",
+    "mailparser": "latest",
+    "next": "15.2.4",
+    "node-imap": "^0.9.0",
+    "pino": "latest",
+    "react": "^19",
+    "react-dom": "^19",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "tw-animate-css": "latest"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^22",
+    "@types/node-imap": "^0.9.3",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5",
+    "tailwindcss": "4.1.14",
+    "ts-node": "^10.9.1",
+    "typescript": "^5"
+  }
+}
